@@ -14,6 +14,15 @@
               <a href="/login">Войти</a>
           </div>
           <hr>
+          {% with mesages = get_flashed_messages() %}
+              {% if mesages %}
+                  <ul>
+                      {% for message in mesages %}
+                          <li>{{ message }}</li>
+                      {% endfor %}
+                  </ul>
+              {% endif %}
+          {% endwith %}
             <header>
                 <h1>Микроблог Владимира.</h1>
             </header>
