@@ -1,0 +1,39 @@
+<doctype html>
+  <html>
+      <head>
+          <title>{% block title %} {% endblock %}</title>
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+          <script src="{{ url_for('static', filename='js/script.js') }}">
+          </script>
+      </head>
+      <body>
+        <div class="wrapper">
+        
+        <div>Навигация: 
+            <a href="/index">Домой</a>
+            <a href="/login">Войти</a>
+        </div>
+        <hr>
+        {% with mesages = get_flashed_messages() %}
+            {% if mesages %}
+                <ul>
+                    {% for message in mesages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+          <header>
+              <h1>Микроблог Владимира.</h1>
+          </header>
+          <main>
+            {% block content %}{% endblock %}
+          </main>
+          <footer>
+              <hr>
+              <p>&copy; 2024 Микроблог Владимира</p>
+          </footer>
+          </div>
+      </body>
+  </html>
+</doctype>

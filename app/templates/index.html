@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <section class="posts">
+        <img class = "mainimage" src="{{ url_for('static', filename='images/i.png') }}"> 
+        {% for post in posts %}
+            <article class="post">
+                <h2>{{ post.title }} </h2>
+                <p>{{ post.text }} </p>
+                <p class="post-meta">{{ post.date }}</p>
+            </article>
+        {% endfor %}
+{% endblock %}
