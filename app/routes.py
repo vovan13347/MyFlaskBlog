@@ -1,54 +1,45 @@
-from flask import render_template, flash, redirect
+from flask import render_template, flash, redirect, url_for, request
 from app import app
 from app.forms import LoginForm
+from app.models import Post, User
+
+from flask_login import current_user, login_user, logout_user, login_required
+import sqlalchemy as sa
+from app import db
+
+from urllib.parse import urlsplit
+
 
 @app.route('/')
 @app.route('/index')
+#@login_required
 def index():
     user = {'username': 'User'}
-    posts = [
-        {
-        'text': '''Каждый раз, начиная создавать тот или иной пост, 
-                стоит помнить, что социальные сети — это не заседание 
-                докторов академических наук, которые будут решать давать ли 
-                автору награду за самый умный пост или нет (хотя такие личности 
-                тоже присутствуют).''',
-        'date': '2020-01-01',
-        'title': 'Как создать пост'
-        },
-        {
-        'text': ''' Первым делом автор поста должен 
-        заинтересовать свою аудиторию.
-        Помимо качественного снимка 
-        (о нем мы расскажем позже),
-        первым делом аудитория обращает внимание на тематику поста. ''',
-        'date': '2023-09-01',
-        'title': 'Как создать пост шаг 2'
-        },
-
-        {
-            'text': ''' После того, как автор обратил на себя внимание, 
-            следующим шагом необходимо вызвать еще более глубокий интерес к посту, 
-            чем был при прочтении заголовка. 
-            Для этого можно использовать интересный факт, 
-            новость или даже личную историю из жизни, 
-            которые относятся к теме поста. ''',
-            'date': '2024-03-01',
-            'title': 'Как создать пост шаг 3'
-        }
-    ]  
-
+    posts = Post.query.all()
     return render_template('index.html', title='Home', user=user, posts=posts)
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('index'))
     form = LoginForm()
     if form.validate_on_submit():
-        flash(
-            'Вход был запрошен пользователем {}, remember_me={}'.format(
-                form.username.data, form.remember_me.data
-            )
-        )
+        user = db.session.scalar(
+            sa.select(User).where(User.username == form.username.data))
+        if user is None or not user.check_password(form.password.data):
+            flash('Invalid username or password')
+            return redirect(url_for('login'))
+        login_user(user, remember=form.remember_me.data)
+        next_page = request.args.get('next')
+        if not next_page or urlsplit(next_page).netloc != '':
+            next_page = url_for('index')
         return redirect('/index')
     return render_template('login.html', title='Войти', form=form)
+
+
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index'))

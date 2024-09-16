@@ -11,7 +11,11 @@
         
         <div>Навигация: 
             <a href="/index">Домой</a>
-            <a href="/login">Войти</a>
+            {% if current_user.is_anonymous %}
+                <a href="/login">Войти</a>
+            {% else %}
+                <a href="/logout">Войти</a>
+            {% endif %}
         </div>
         <hr>
         {% with mesages = get_flashed_messages() %}
