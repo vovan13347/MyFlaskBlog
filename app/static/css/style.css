@@ -44,23 +44,31 @@ footer {
   bottom: 0;
 }
 
-.lfusername, .lfpassword{
+.lfcheck {
+    position: relative;
+    top: -55px;
+    left: 350px;
+
+}
+
+.lfusername, .lfpassword {
     width: 100%;
     padding: 12px;
 
 }
 
-.lfsubmit{
+.lfsubmit {
     width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 14px;
     border: none;
+    border-radius: 12px;
     font-size: 20px;
 
 }
 
-.mainimage{ 
+.mainimage { 
   width: 800; 
   height: 600;
 }
