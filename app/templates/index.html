@@ -4,7 +4,8 @@
 
 {% block content %}
     <section class="posts">
-        <img class = "mainimage" src="{{ url_for('static', filename='images/i.png') }}"> 
+        <img  src="{{ url_for('static', filename='images/i3.png') }}"> 
+        
         {% for post in posts %}
             <article class="post">
                 <h2>{{ post.title }} </h2>
