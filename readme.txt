@@ -56,9 +56,3 @@ pip install flask-login
 
 # https://flask-sqlalchemy-russian.readthedocs.io/ru/latest/queries.html
 
-
-vmware
-
-
-
-hello world

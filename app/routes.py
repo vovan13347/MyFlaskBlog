@@ -12,11 +12,14 @@ from urllib.parse import urlsplit
 
 @app.route('/')
 @app.route('/index')
-#@login_required
+@login_required
 def index():
     user = {'username': 'User'}
     posts = Post.query.all()
-    return render_template('index.html', title='Home', user=user, posts=posts)
+    return render_template('index.html', 
+                           title='Home', 
+                           user=user, 
+                           posts=posts)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -34,7 +37,7 @@ def login():
         next_page = request.args.get('next')
         if not next_page or urlsplit(next_page).netloc != '':
             next_page = url_for('index')
-        return redirect('/index')
+        return redirect(next_page)
     return render_template('login.html', title='Войти', form=form)
 
 
