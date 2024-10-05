@@ -12,10 +12,22 @@ from app.forms import RegistrationForm
 from urllib.parse import urlsplit
 
 
+
+import logging
+
+
+logger = logging.getLogger('werkzeug') # grabs underlying WSGI logger
+handler = logging.FileHandler('test.log') # creates handler for the log file
+logger.addHandler(handler) # adds handler to the werkzeug WSGI logger
+
+
+
+
 @app.route('/')
 @app.route('/index')
 @login_required
 def index():
+    app.logger.info('Проверка')
     user = {'username': 'User'}
     posts = Post.query.all()
     return render_template('index.html', 
@@ -26,12 +38,22 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+
+    logger.info('Проверка логгера')
+
     if current_user.is_authenticated:
         return redirect(url_for('index'))
+    
+    logger.info('Пользователь не аутентифицирован')
+
     form = LoginForm()
     if form.validate_on_submit():
+        logger.info('Ветвление validate_on_sumbit сработало')
         user = db.session.scalar(
             sa.select(User).where(User.username == form.username.data))
+        logger.info('База данных открылась')
+        logger.info('Пользователь: ', form.username.data)
+        logger.info('Пароль: ', form.password.data)
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
             return redirect(url_for('login'))
