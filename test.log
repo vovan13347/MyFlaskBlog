@@ -145,3 +145,234 @@
 127.0.0.1 - - [05/Oct/2024 16:18:07] "POST /login?next=/ HTTP/1.1" 200 -
 127.0.0.1 - - [05/Oct/2024 16:18:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 127.0.0.1 - - [05/Oct/2024 16:18:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [07/Oct/2024 23:26:04] "[32mGET / HTTP/1.1[0m" 302 -
+РџСЂРѕРІРµСЂРєР° Р»РѕРіРіРµСЂР°
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р°СѓС‚РµРЅС‚РёС„РёС†РёСЂРѕРІР°РЅ
+127.0.0.1 - - [07/Oct/2024 23:26:04] "GET /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:26:04] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:26:04] "GET /static/js/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:26:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+РџСЂРѕРІРµСЂРєР° Р»РѕРіРіРµСЂР°
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р°СѓС‚РµРЅС‚РёС„РёС†РёСЂРѕРІР°РЅ
+127.0.0.1 - - [07/Oct/2024 23:26:47] "POST /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:26:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 23:26:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+РџСЂРѕРІРµСЂРєР° Р»РѕРіРіРµСЂР°
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р°СѓС‚РµРЅС‚РёС„РёС†РёСЂРѕРІР°РЅ
+127.0.0.1 - - [07/Oct/2024 23:27:30] "POST /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:27:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 23:27:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+РџСЂРѕРІРµСЂРєР° Р»РѕРіРіРµСЂР°
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р°СѓС‚РµРЅС‚РёС„РёС†РёСЂРѕРІР°РЅ
+127.0.0.1 - - [07/Oct/2024 23:29:08] "POST /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:29:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 23:29:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [07/Oct/2024 23:34:05] "[32mGET / HTTP/1.1[0m" 302 -
+РџСЂРѕРІРµСЂРєР° Р»РѕРіРіРµСЂР°
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р°СѓС‚РµРЅС‚РёС„РёС†РёСЂРѕРІР°РЅ
+127.0.0.1 - - [07/Oct/2024 23:34:05] "GET /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:34:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 23:34:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+РџСЂРѕРІРµСЂРєР° Р»РѕРіРіРµСЂР°
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р°СѓС‚РµРЅС‚РёС„РёС†РёСЂРѕРІР°РЅ
+127.0.0.1 - - [07/Oct/2024 23:34:54] "POST /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 23:34:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 23:34:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Oct/2024 15:49:52] "[32mGET / HTTP/1.1[0m" 302 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Oct/2024 15:51:55] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 15:51:55] "GET /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:51:56] "GET /static/js/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:51:56] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:51:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [08/Oct/2024 15:52:11] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:27] "[32mPOST /register HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 15:52:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:52:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 15:52:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 15:52:36] "GET /index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:52:36] "GET /static/images/i3.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:52:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 15:52:52] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 15:52:53] "GET /login?next=/index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:52:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:57] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:52:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:52:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:53:28] "[32mPOST /register HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 15:53:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:53:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:53:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 15:53:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 15:53:36] "GET /index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 15:53:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:53:37] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 15:53:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Oct/2024 16:04:11] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:04:12] "GET /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:04:12] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:04:12] "GET /static/js/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:04:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [08/Oct/2024 16:04:16] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:04:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:04:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:05:28] "[32mPOST /register HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:05:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:05:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:05:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 16:05:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:05:43] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:05:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:05:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 16:19:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:19:25] "GET /index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:19:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:19:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:19:25] "GET /static/images/i3.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Oct/2024 16:27:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:27:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:27:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:27:31] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:27:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:27:38] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:27:39] "GET /login?next=/index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:27:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:27:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 16:28:02] "[32mPOST /login?next=/index HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:28:02] "GET /index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:28:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:28:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:28:02] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Oct/2024 16:49:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:49:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:49:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:49:43] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:49:46] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:49:46] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:49:46] "GET /login?next=/index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:49:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:49:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:50:03] "POST /login?next=/index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:50:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:50:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 16:50:08] "[32mPOST /login?next=/index HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:50:08] "GET /index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:50:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:50:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:50:08] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:50:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:50:10] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:50:10] "GET /login?next=/index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:50:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:50:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.253:5000
+[33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Oct/2024 16:53:37] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:53:37] "GET /login?next=/ HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:53:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:53:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+127.0.0.1 - - [08/Oct/2024 16:53:51] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:53:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:53:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:53:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:53:51] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:53:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Oct/2024 16:53:58] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+127.0.0.1 - - [08/Oct/2024 16:53:58] "GET /login?next=/index HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2024 16:53:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Oct/2024 16:53:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

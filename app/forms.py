@@ -15,7 +15,7 @@ handler = logging.FileHandler('testforms.log') # creates handler for the log fil
 logger_forms.addHandler(handler) # adds handler to the werkzeug WSGI logger
 
 class LoginForm(FlaskForm):
-    username = StringField('Логин полfьзозателя', validators=[DataRequired()])
+    username = StringField('Логин пользозателя', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
     remember_me = BooleanField('Запомнить')
     submit = SubmitField('Войти')
