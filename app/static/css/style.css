@@ -37,7 +37,6 @@ footer {
   color: #fff;
   text-align: left;
   padding: 1rem 0;
-
   width: 100%;
   bottom: 0;
 }
@@ -55,6 +54,13 @@ footer {
 
 }
 
+.rfusername, .rfpassword, .rfemail {
+    width: 120%;
+    padding: 12px;
+    position: relative;
+    left: -30px;
+
+}
 .lfsubmit {
     width: 30%;
     background-color: #000;
@@ -63,6 +69,19 @@ footer {
     border: none;
     border-radius: 12px;
     font-size: 20px;
+
+}
+
+.rfsubmit {
+    width: 55%;
+    background-color: #000;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
 
 }
 
@@ -79,6 +98,14 @@ footer {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
 }
+
+.registrationform {
+    background-color: #dca05b;
+    padding: 5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+  }
 
 .wrapper {
   display: flex;
