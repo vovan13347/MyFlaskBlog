@@ -5,6 +5,8 @@ import sqlalchemy as sa
 from app import db
 from app.models import User
 
+from flask_wtf.file import FileField, FileAllowed
+
 
 
 import logging
@@ -43,6 +45,9 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Пароль', validators=[DataRequired()])
     password2 = PasswordField(
         'Повторите пароль', validators=[DataRequired(), EqualTo('password')])
+    
+    avatar = FileField('Avatar', validators=[FileAllowed(['jpg', 'png'], 'Только изображения!')])
+
     submit = SubmitField('Регистрация')
 
     def validate_username(self, username):

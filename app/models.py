@@ -9,6 +9,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from flask_login import UserMixin
 
+
+from flask import url_for
+
 @login.user_loader
 def load_user(id):
     return db.session.get(User, int(id))
@@ -24,9 +27,15 @@ class User(UserMixin, db.Model):
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+    
+
+    def avatar_url(self):
+        if self.avatar:
+            return url_for('static', filename=f'avatars/{self.avatar}')
+        return url_for('static', filename='avatars/default_avatar.png')
 
     def __repr__(self) -> str:
-        return f"<User(id={self.id})>"
+        return f"<User(id={self.id}),(username={self.username})>"
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)

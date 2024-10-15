@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
         <div class="registrationform">
             <h1>Регистрация</h1>
@@ -33,6 +33,12 @@
                     <span style="color: red;">[{{ error }}]</span>
                 {% endfor %}
             </p>
+
+            <p>
+                {{ form.avatar.label }}<br>
+                {{ form.avatar() }}
+            </p>
+
             <p>{{ form.submit(class="rfsubmit") }}</p>
     </div>
     </form>
