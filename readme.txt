@@ -52,7 +52,11 @@ user8.check_password('')
 
 pip install flask-login
 
+# helloworlder
+# пароль: 1
 
+# https://www.jetbrains.com/datagrip/
+# https://dbeaver.io/
 
 # https://flask-sqlalchemy-russian.readthedocs.io/ru/latest/queries.html
 

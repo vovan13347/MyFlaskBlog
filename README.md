@@ -10,9 +10,3 @@ flask-migrate~=4.0.7
 flask-login~=0.6.3
 email-validator~=2.2.0
 ```
-
-# helloworlder
-# пароль: 1
-
-# https://www.jetbrains.com/datagrip/
-# https://dbeaver.io/
