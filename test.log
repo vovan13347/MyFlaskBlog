@@ -3,3 +3,165 @@
  * Running on http://127.0.0.1:5000
  * Running on http://31.15.17.243:5000
 [33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+46.39.56.91 - - [01/Nov/2024 11:16:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03\x8c\x8c0\x9eL-ª\x96\x88Ãå')
+46.39.56.91 - - [01/Nov/2024 11:16:51] "[35m[1m\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03\x8c\x8c0\x9eL-ª\x96\x88Ãå\x0b\x92\x8c\x14çd\x0fB\x8b\x19á\x8c\x01\x82þæP!\x01\x14[0m" HTTPStatus.BAD_REQUEST -
+46.39.56.91 - - [01/Nov/2024 11:16:51] code 400, message Bad request version ('\x05\x9d\x9d(\x03ê\x1b/äÌsféû)Ä×\x8e')
+46.39.56.91 - - [01/Nov/2024 11:16:51] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03,Ôµ\x12å¯\x87Çã¿a9Ð¤£ÀöÖOVZå ò\x03±\x19K×È¯Í \x84^Ü\x9c©ªÀ\x13\x03\x06÷\x96\x1d=\x1aJyõñÆI#Ð¿Nh¸{!sÙ@\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x8a\x8a\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00\x003\x00+\x00)\x9a\x9a\x00\x01\x00\x00\x1d\x00 \x82ÿ\x01\x84fY\x80\\µ(\x02koý\x01\x824S\x02\x07\x88\x8aÈ:\x06}\x17¸\x9a°\x97c\x00\x12\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x00+\x00\x07\x06\x8a\x8a\x03\x04\x03\x03\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00ÿ\x01\x00\x01\x00þ\x0d\x00º\x00\x00\x01\x00\x01K\x00 \x05\x9d\x9d(\x03ê\x1b/äÌsféû)Ä×\x8e[0m" HTTPStatus.BAD_REQUEST -
+46.39.56.91 - - [01/Nov/2024 11:16:54] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.91 - - [01/Nov/2024 11:16:54] "GET /login?next=/ HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:16:54] "GET /static/css/style.css HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:16:54] "GET /static/js/script.js HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:16:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+46.39.56.91 - - [01/Nov/2024 11:17:10] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:17:11] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:17:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:11] "GET /static/avatars/cat.jpg HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:17:31] "GET /add_post HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:17:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:50] "GET /index HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:17:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:50] "GET /static/images/i3.png HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:17:57] "GET /add_post HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:17:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:17:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:18:00] "GET /index HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:18:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:18:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:18:01] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:18:13] "GET /add_post HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:18:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:18:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:19:34] "[35m[1mPOST /add_post HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+46.39.56.91 - - [01/Nov/2024 11:21:13] "GET /index HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:21:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:21:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:21:13] "[36mGET /static/images/i3.png HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:21:57] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:21:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:21:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:21:57] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+46.39.56.91 - - [01/Nov/2024 11:28:09] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:28:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:09] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:11] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:28:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:11] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:13] "[35m[1mGET /add_post HTTP/1.1[0m" 500 -
+46.39.56.91 - - [01/Nov/2024 11:28:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:28:18] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.91 - - [01/Nov/2024 11:28:18] "GET /login?next=/index HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:28:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+46.39.56.91 - - [01/Nov/2024 11:28:44] "[32mPOST /login?next=/index HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:28:44] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:28:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:44] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:28:48] "[35m[1mGET /add_post HTTP/1.1[0m" 500 -
+46.39.56.91 - - [01/Nov/2024 11:31:51] "[35m[1mGET /add_post HTTP/1.1[0m" 500 -
+46.39.56.91 - - [01/Nov/2024 11:31:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:31:54] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.91 - - [01/Nov/2024 11:31:54] "GET /login?next=/index HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:31:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:31:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+46.39.56.91 - - [01/Nov/2024 11:33:06] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.91 - - [01/Nov/2024 11:33:06] "GET /login?next=/ HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:33:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+46.39.56.91 - - [01/Nov/2024 11:33:22] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:33:22] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:33:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:22] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:25] "GET /add_post HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:33:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:49] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:33:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:33:49] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:34:02] "GET /add_post HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:34:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:34:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:36:18] "[32mPOST /add_post HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:36:19] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:36:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:36:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:36:19] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 11:37:54] code 400, message Bad request version ('Ä(TK\x86z%UõR\x07zá>µøXh·\x9e\x96Ý94Í¥lZ\x02I1Ô\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+84.51.95.182 - - [01/Nov/2024 11:37:54] "[35m[1m\x16\x03\x01\x07K\x01\x00\x07G\x03\x03jd,÷;ô«0 ]µsg]wC`\x10OçøG\\û\x99ØÇî¨Gè£ Ä(TK\x86z%UõR\x07zá>µøXh·\x9e\x96Ý94Í¥lZ\x02I1Ô\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+84.51.95.182 - - [01/Nov/2024 11:37:54] code 400, message Bad request version ('\x9b\x01ÁFL\x11\x95¶wØÓIÄ\x97û\x16/2sæGG]ïåß\x993\x07=\x04\x92\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+84.51.95.182 - - [01/Nov/2024 11:37:54] "[35m[1m\x16\x03\x01\x07K\x01\x00\x07G\x03\x03AfÀ\x85\x06Å\x84!Áaûv{Ód\x1b\x19\x03Asa\x00\x16\x92öúº\x9aÔ6Ç\x8e \x9b\x01ÁFL\x11\x95¶wØÓIÄ\x97û\x16/2sæGG]ïåß\x993\x07=\x04\x92\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+84.51.95.182 - - [01/Nov/2024 11:37:54] code 400, message Bad request syntax ('\x16\x03\x01\x02z\x01\x00\x02v\x03\x03\x91á')
+84.51.95.182 - - [01/Nov/2024 11:37:54] "[35m[1m\x16\x03\x01\x02z\x01\x00\x02v\x03\x03\x91á[0m" HTTPStatus.BAD_REQUEST -
+84.51.95.182 - - [01/Nov/2024 11:38:07] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 11:38:07] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 11:38:08] "GET /static/css/style.css HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 11:38:08] "GET /static/js/script.js HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 11:38:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 11:38:15] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+84.51.95.182 - - [01/Nov/2024 11:38:15] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 11:38:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 11:38:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 11:38:16] "GET /static/avatars/cat.jpg HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 11:38:52] "GET /add_post HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 11:38:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 11:38:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:40:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 11:40:19] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.91 - - [01/Nov/2024 11:40:19] "GET /login?next=/index HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 11:40:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 11:40:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

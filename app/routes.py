@@ -131,6 +131,7 @@ def user(username):
 @app.route('/add_post',methods=['GET', 'POST'])
 @login_required
 def user_post():
+    
     form = UpdatePostForm()
     if form.validate_on_submit():
 
@@ -140,6 +141,6 @@ def user_post():
         db.session.add(post)
         db.session.commit()
         flash('Пост добавлен!')
-        return redirect(url_for('/user/<username>'))
+        return redirect(url_for('user', username=current_user.username))
 
     return render_template('add_post.html', form=form)
