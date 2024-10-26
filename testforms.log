@@ -67,3 +67,35 @@
 46.39.56.100 - - [23/Oct/2024 16:02:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 46.39.56.100 - - [23/Oct/2024 16:02:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 46.39.56.100 - - [23/Oct/2024 16:02:44] "GET /static/images/i3.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+84.51.77.208 - - [23/Oct/2024 16:14:36] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.77.208 - - [23/Oct/2024 16:14:36] "GET /login?next=/ HTTP/1.1" 200 -
+104.252.127.154 - - [23/Oct/2024 16:14:51] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+104.252.127.154 - - [23/Oct/2024 16:14:51] "GET /login?next=/ HTTP/1.1" 200 -
+104.252.127.154 - - [23/Oct/2024 16:14:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+104.252.127.154 - - [23/Oct/2024 16:14:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+46.39.56.100 - - [23/Oct/2024 20:16:46] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.100 - - [23/Oct/2024 20:16:46] "GET /login?next=/ HTTP/1.1" 200 -
+46.39.56.100 - - [23/Oct/2024 20:16:47] "GET /static/js/script.js HTTP/1.1" 200 -
+46.39.56.100 - - [23/Oct/2024 20:16:47] "GET /static/css/style.css HTTP/1.1" 200 -

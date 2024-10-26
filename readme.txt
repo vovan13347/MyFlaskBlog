@@ -78,3 +78,7 @@ sudo systemctl status firewalld
 
 sudo netstat -tuln
 flask run --host=0.0.0.0 --port=5000
+
+export FLASK_RUN_HOST=0.0.0.0
+
+git pull origin master
