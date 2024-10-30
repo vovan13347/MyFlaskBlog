@@ -8,7 +8,6 @@ import sqlalchemy as sa
 from app import db
 
 from app.forms import RegistrationForm
-
 from urllib.parse import urlsplit
 
 
@@ -113,4 +112,16 @@ def register():
 def user(username):
     user = db.first_or_404(sa.select(User).where(User.username == username))
     posts = Post.query.filter_by(user_id=user.id).all()
+    '''
+    form = UpdateAvatarForm()
+    if form.validate_on_submit():
+
+        avatar_filename = None
+        if form.avatar.data:
+            avatar_file = form.avatar.data
+            avatar_filename = secure_filename(avatar_file.filename)
+            avatar_path = os.path.join(current_app.root_path, 'static/avatars', avatar_filename)
+            avatar_file.save(avatar_path)
+    '''
+
     return render_template('user.html', user=user, posts=posts)

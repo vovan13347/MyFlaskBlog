@@ -61,3 +61,8 @@ class RegistrationForm(FlaskForm):
             User.email == email.data))
         if user is not None:
             raise ValidationError('Email введен неправильно')
+        
+class UpdateAvatarForm(FlaskForm):
+    
+    avatar = FileField('Avatar', validators=[FileAllowed(['jpg', 'png'], 'Только изображения!')])
+    submit = SubmitField('Обновить')

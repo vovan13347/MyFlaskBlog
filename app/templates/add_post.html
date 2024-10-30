@@ -1,0 +1,11 @@
+{% block content %}
+    <h1>Редактирование поста</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.add_title.label }}<br>
+            {{ form.add_post.label }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
