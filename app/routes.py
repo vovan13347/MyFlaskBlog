@@ -7,7 +7,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 import sqlalchemy as sa
 from app import db
 
-from app.forms import RegistrationForm
+from app.forms import RegistrationForm,UpdateAvatarForm
 from urllib.parse import urlsplit
 
 
@@ -107,12 +107,12 @@ def register():
     return render_template('register.html', title='Register', form=form)
 
 
-@app.route('/user/<username>')
+@app.route('/user/<username>',methods=['GET', 'POST'])
 @login_required
 def user(username):
     user = db.first_or_404(sa.select(User).where(User.username == username))
     posts = Post.query.filter_by(user_id=user.id).all()
-    '''
+    
     form = UpdateAvatarForm()
     if form.validate_on_submit():
 
@@ -122,6 +122,8 @@ def user(username):
             avatar_filename = secure_filename(avatar_file.filename)
             avatar_path = os.path.join(current_app.root_path, 'static/avatars', avatar_filename)
             avatar_file.save(avatar_path)
-    '''
+            
+        if avatar_filename:
+            user.avatar = avatar_filename
 
-    return render_template('user.html', user=user, posts=posts)
+    return render_template('user.html', user=user, form=form, posts=posts)
