@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Пользователь: {{ user.username }}</h1>
+    <h1>ID и пользователь : {{ user.id }} : {{ user.username }}</h1>
     <hr>
 
     <img src="{{ user.avatar_url() }}" alt="{{ user.username }}'s avatar" width="150" height="150">

@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, IntegerField, TextAreaField, BooleanField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
 import sqlalchemy as sa
 from app import db
@@ -63,6 +63,12 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('Email введен неправильно')
         
 class UpdateAvatarForm(FlaskForm):
-    
     avatar = FileField('Avatar', validators=[FileAllowed(['jpg', 'png'], 'Только изображения!')])
-    submit = SubmitField('Обновить')
+    submit = SubmitField('Обновить фото')
+
+class UpdatePostForm(FlaskForm):
+    add_title = StringField('Название поста', validators=[DataRequired()])
+    add_post = TextAreaField("Введите текст поста", validators=[DataRequired()])
+    add_date = StringField('Дата поста', validators=[DataRequired()])
+    add_user_id = IntegerField("Введите id пользователя",validators=[DataRequired()])
+    submit = SubmitField('Добавить пост')

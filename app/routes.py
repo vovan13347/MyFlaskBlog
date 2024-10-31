@@ -7,7 +7,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 import sqlalchemy as sa
 from app import db
 
-from app.forms import RegistrationForm,UpdateAvatarForm
+from app.forms import RegistrationForm, UpdateAvatarForm, UpdatePostForm
 from urllib.parse import urlsplit
 
 
@@ -127,3 +127,19 @@ def user(username):
             user.avatar = avatar_filename
 
     return render_template('user.html', user=user, form=form, posts=posts)
+
+@app.route('/add_post',methods=['GET', 'POST'])
+@login_required
+def user_post():
+    form = UpdatePostForm()
+    if form.validate_on_submit():
+
+        post = Post(title=form.add_title.data, text=form.add_post.data, 
+                date=form.add_date.data, user_id=form.add_user_id.data)
+        
+        db.session.add(post)
+        db.session.commit()
+        flash('Пост добавлен!')
+        return redirect(url_for('/user/<username>'))
+
+    return render_template('add_post.html', form=form)
