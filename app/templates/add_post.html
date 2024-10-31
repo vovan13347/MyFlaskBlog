@@ -9,6 +9,9 @@
         <p>
             {{ form.add_title(class="rfusername",
             placeholder=form.add_title.label.text,size=32) }}<br>
+            {% for error in form.add_title.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
 
         <p>
