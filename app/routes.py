@@ -60,7 +60,7 @@ def login():
         logger.info('База данных открылась')
         logger.info('Пользователь: ', form.username.data)
         logger.info('Пароль: ', form.password.data)
-
+        
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
             return redirect(url_for('login'))
@@ -112,6 +112,10 @@ def register():
 def user(username):
     user = db.first_or_404(sa.select(User).where(User.username == username))
     posts = Post.query.filter_by(user_id=user.id).all()
+    logger.info(f"user id from db: {user.id}")
+
+    # Проверка get_id()
+    logger.info(f'id: {current_user.get_id()}')
     
     form = UpdateAvatarForm()
     if form.validate_on_submit():
@@ -131,7 +135,6 @@ def user(username):
 @app.route('/add_post',methods=['GET', 'POST'])
 @login_required
 def user_post():
-    
     form = UpdatePostForm()
     if form.validate_on_submit():
 

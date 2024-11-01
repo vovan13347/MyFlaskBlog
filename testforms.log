@@ -205,3 +205,162 @@
 46.39.56.100 - - [23/Oct/2024 20:16:47] "GET /static/js/script.js HTTP/1.1" 200 -
 46.39.56.100 - - [23/Oct/2024 20:16:47] "GET /static/css/style.css HTTP/1.1" 200 -
 >>>>>>> d8d7eb7 (update)
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+46.39.56.91 - - [01/Nov/2024 12:16:16] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+46.39.56.91 - - [01/Nov/2024 12:16:17] "GET /login?next=/ HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 12:16:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 12:16:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+46.39.56.91 - - [01/Nov/2024 12:16:27] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+46.39.56.91 - - [01/Nov/2024 12:16:27] "GET /user/myuser HTTP/1.1" 200 -
+46.39.56.91 - - [01/Nov/2024 12:16:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 12:16:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+46.39.56.91 - - [01/Nov/2024 12:16:27] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://31.15.17.243:6000
+[33mPress CTRL+C to quit[0m
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+84.51.95.182 - - [01/Nov/2024 12:21:22] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:21:22] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:21:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:21:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:21:27] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+84.51.95.182 - - [01/Nov/2024 12:21:27] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:21:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:21:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:21:27] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:23:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+84.51.95.182 - - [01/Nov/2024 12:23:04] "[32mGET /index HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:23:04] "GET /login?next=/index HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:23:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:23:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:23:21] "[32mPOST /login?next=/index HTTP/1.1[0m" 302 -
+84.51.95.182 - - [01/Nov/2024 12:23:21] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:23:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:23:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:23:21] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:24:28] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:24:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:24:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:24:33] "[35m[1mPOST /login?next=/ HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+84.51.95.182 - - [01/Nov/2024 12:25:44] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:25:45] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:25:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:25:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:25:52] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+84.51.95.182 - - [01/Nov/2024 12:25:52] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:25:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:25:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:25:52] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+84.51.95.182 - - [01/Nov/2024 12:26:33] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:26:33] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:26:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:26:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:26:37] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+84.51.95.182 - - [01/Nov/2024 12:26:37] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:26:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:26:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:26:38] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+84.51.95.182 - - [01/Nov/2024 12:28:43] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:28:43] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:28:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:28:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:28:48] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+user id from db: 9
+84.51.95.182 - - [01/Nov/2024 12:28:48] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:28:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:28:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:28:48] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://31.15.17.243:5000
+[33mPress CTRL+C to quit[0m
+84.51.95.182 - - [01/Nov/2024 12:30:31] "[32mGET / HTTP/1.1[0m" 302 -
+Проверка логгера
+Пользователь не аутентифицирован
+84.51.95.182 - - [01/Nov/2024 12:30:31] "GET /login?next=/ HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:30:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:30:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+Проверка логгера
+Пользователь не аутентифицирован
+Ветвление validate_on_sumbit сработало
+База данных открылась
+84.51.95.182 - - [01/Nov/2024 12:30:36] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+user id from db: 9
+id: 9
+84.51.95.182 - - [01/Nov/2024 12:30:36] "GET /user/myuser HTTP/1.1" 200 -
+84.51.95.182 - - [01/Nov/2024 12:30:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:30:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+84.51.95.182 - - [01/Nov/2024 12:30:36] "[36mGET /static/avatars/cat.jpg HTTP/1.1[0m" 304 -
