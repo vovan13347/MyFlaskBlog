@@ -6,11 +6,9 @@ from app.models import Post, User
 from flask_login import current_user, login_user, logout_user, login_required
 import sqlalchemy as sa
 from app import db
-
+import datetime as dt
 from app.forms import RegistrationForm, UpdateAvatarForm, UpdatePostForm
 from urllib.parse import urlsplit
-
-
 
 import logging
 
@@ -139,7 +137,7 @@ def user_post():
     if form.validate_on_submit():
 
         post = Post(title=form.add_title.data, text=form.add_post.data, 
-                date=form.add_date.data, user_id=form.add_user_id.data)
+                date=dt.datetime.now().strftime("%Y-%m-%d"), user_id=current_user.get_id())
         
         db.session.add(post)
         db.session.commit()

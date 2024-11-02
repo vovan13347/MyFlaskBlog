@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, IntegerField, TextAreaField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, TextAreaField, BooleanField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
 import sqlalchemy as sa
 from app import db
@@ -69,6 +69,4 @@ class UpdateAvatarForm(FlaskForm):
 class UpdatePostForm(FlaskForm):
     add_title = StringField('Название поста', validators=[DataRequired()])
     add_post = TextAreaField("Введите текст поста", validators=[DataRequired()])
-    add_date = StringField('Дата поста', validators=[DataRequired()])
-    add_user_id = IntegerField("Введите id пользователя",validators=[DataRequired()])
     submit = SubmitField('Добавить пост')
