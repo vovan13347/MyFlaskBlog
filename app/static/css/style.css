@@ -41,6 +41,18 @@ footer {
   bottom: 0;
 }
 
+.addpost {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 1440px;
+    border-radius: 12px;
+  }
+
 .lfcheck {
     position: relative;
     top: -55px;

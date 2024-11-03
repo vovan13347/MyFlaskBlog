@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>ID и пользователь : {{ user.id }} : {{ user.username }}</h1>
+    <h1>Пользователь : {{ user.username }}</h1>
     <hr>
 
     <img src="{{ user.avatar_url() }}" alt="{{ user.username }}'s avatar" width="150" height="150">
@@ -18,7 +18,7 @@
 
     </form>
 
-    
+    <a class = "addpost" href="/add_post">Добавить пост</a>
     {% for post in posts %}
     <article class="post">
         <h2>{{ post.title }} </h2>

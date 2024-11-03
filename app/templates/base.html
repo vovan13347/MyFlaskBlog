@@ -15,7 +15,6 @@
                 <a href="/login">Войти</a>
             {% else %}
                 <a href="{{ url_for('user', username=current_user.username) }}">Профиль</a>
-                <a href="/add_post">Добавить пост</a>
                 <a href="/logout">Выйти</a>
             {% endif %}
         </div>
