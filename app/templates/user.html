@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Пользователь : {{ user.username }}</h1>
-    <hr>
-
-    <img src="{{ user.avatar_url() }}" alt="{{ user.username }}'s avatar" width="150" height="150">
-
+    <h2 class="username"> {{ user.username }}</h2>
     <form action="" method="post" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
             <p>
+                <img src="{{ user.avatar_url() }}" alt="{{ user.username }}'s avatar" width="150" height="150">
+                <br>
                 {{ form.avatar.label }}<br>
                 {{ form.avatar() }} <br>
                 {{ form.submit() }}
@@ -17,8 +15,10 @@
                 {% endfor %}
 
     </form>
+    <hr>
 
-    <a class = "addpost" href="/add_post">Добавить пост</a>
+
+    <button class = "addpost" href="/add_post">Добавить пост</button>
     {% for post in posts %}
     <article class="post">
         <h2>{{ post.title }} </h2>

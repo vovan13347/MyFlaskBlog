@@ -1,3 +1,5 @@
+
+
 body {
   background-color: #f9f9f9;
   color: #333;
@@ -9,6 +11,12 @@ h1 {
   text-align: center;
 }
 
+.username {
+    color: black;
+    position: relative;
+    left: 155px;
+    top: 45px;
+  }
 
 p {
   font-family: Times New Roman;
@@ -41,6 +49,7 @@ footer {
   bottom: 0;
 }
 
+@media screen and (max-width: 600px){
 .addpost {
     background-color: #000;
     color: #fff;
@@ -52,6 +61,8 @@ footer {
     left: 1440px;
     border-radius: 12px;
   }
+
+}
 
 .lfcheck {
     position: relative;
@@ -153,3 +164,4 @@ footer {
   color: #666;
   margin-top: 1rem;
 }
+
