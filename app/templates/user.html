@@ -7,7 +7,7 @@
         {{ form.hidden_tag() }}
         <img src="{{ user.avatar_url() }}" alt="{{ user.username }}'s avatar" width="150" height="150">
             <br>   
-            <p>
+            <p class="avataruser">
                 {{ form.avatar.label }}<br>
                 {{ form.avatar() }} <br>
                 {{ form.submit() }}

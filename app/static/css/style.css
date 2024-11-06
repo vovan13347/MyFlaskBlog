@@ -11,19 +11,6 @@ h1 {
   text-align: center;
 }
 
-.username {
-    color: black;
-    position: relative;
-    left: 155px;
-    top: 90px;
-}
-
-.useremail {
-    color: black;
-    position: relative;
-    left: 155px;
-    top: 75px;
-}
 
 p {
   font-family: Times New Roman;
@@ -70,6 +57,26 @@ footer {
   }
 
 }
+
+.username {
+    color: black;
+    position: relative;
+    left: 160px;
+    top: 90px;
+}
+
+.useremail {
+    color: black;
+    position: relative;
+    left: 160px;
+    top: 75px;
+}
+
+.avataruser {
+    position: relative;
+    top: -100px;
+    left: 160px;
+  }
 
 .lfcheck {
     position: relative;
