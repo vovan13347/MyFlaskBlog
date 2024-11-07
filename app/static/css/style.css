@@ -78,6 +78,12 @@ footer {
     left: 160px;
   }
 
+  .deletepostuser {
+    position: relative;
+    top: 25px;
+    left: 1480px;
+  }
+
 .lfcheck {
     position: relative;
     top: -55px;

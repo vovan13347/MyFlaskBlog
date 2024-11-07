@@ -145,3 +145,9 @@ def user_post():
         return redirect(url_for('user', username=current_user.username))
 
     return render_template('add_post.html', form=form)
+
+@app.route('/delete_post',methods=['POST'])
+@login_required
+def delete_post():
+
+    return render_template('user.html', user=user, form=form, posts=posts)
