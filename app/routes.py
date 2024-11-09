@@ -146,8 +146,15 @@ def user_post():
 
     return render_template('add_post.html', form=form)
 
-@app.route('/delete_post',methods=['POST'])
+@app.route('/delete_post/<int:post_id>', methods=['POST'])
 @login_required
-def delete_post():
+def delete_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.user_id != current_user.id:
+        flash('У вас нет прав на удаление этого поста')
+        return redirect(url_for('user', username=current_user.username))
+    db.session.delete(post)
+    db.session.commit()
+    flash('Пост удалён', 'success')
+    return redirect(url_for('user', username=current_user.username))
 
-    return render_template('user.html', user=user, form=form, posts=posts)
