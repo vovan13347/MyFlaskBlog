@@ -28,9 +28,15 @@
         <h2>{{ post.title }} </h2>
         <p>{{ post.text }}</p>
         <p class="post-meta">{{ post.date }}</p>
+
+        <form action="{{ url_for('change_user_post', post_id=post.id) }}" method="post">
+            <button type="submit">Редактировать пост</button>
+        </form>
+
         <form action="{{ url_for('delete_post', post_id=post.id) }}" method="post">
             <button class="deletepostuser" type="submit">Удалить пост</button>
         </form>
+        
     </article>
     {% endfor %}
 {% endblock %}

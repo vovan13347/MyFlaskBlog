@@ -7,7 +7,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 import sqlalchemy as sa
 from app import db
 import datetime as dt
-from app.forms import RegistrationForm, UpdateAvatarForm, UpdatePostForm
+from app.forms import RegistrationForm, UpdateAvatarForm, UpdatePostForm, ChangePostForm
 from urllib.parse import urlsplit
 
 import logging
@@ -158,3 +158,15 @@ def delete_post(post_id):
     flash('Пост удалён', 'success')
     return redirect(url_for('user', username=current_user.username))
 
+@app.route('/change_user_post',methods=['GET', 'POST'])
+@login_required
+def change_user_post(post_id):
+    form = ChangePostForm()
+    if form.validate_on_submit():
+        current_post = Post.query.get(post_id)
+        current_post.title = form.change_title.data
+        current_post.text = form.change_post.data
+        db.session.commit()
+        return redirect(url_for('user', username=current_user.username))
+    
+    return render_template('change_user_post.html', form=form)
