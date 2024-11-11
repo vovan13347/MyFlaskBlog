@@ -158,7 +158,7 @@ def delete_post(post_id):
     flash('Пост удалён', 'success')
     return redirect(url_for('user', username=current_user.username))
 
-@app.route('/change_user_post',methods=['GET', 'POST'])
+@app.route('/change_user_post/<int:post_id>', methods=['POST'])
 @login_required
 def change_user_post(post_id):
     form = ChangePostForm()

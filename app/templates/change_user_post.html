@@ -4,10 +4,10 @@
     <form action="" method="post" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
         <div class="registrationform">
-            <h1>Изменение поста</h1>
+            <h1>Добавление поста</h1>
 
         <p>
-            {{ form.add_title(class="rfusername",
+            {{ form.change_title(class="rfusername",
             placeholder=form.change_title.label.text,size=32) }}<br>
             {% for error in form.change_title.errors %}
                 <span style="color: red;">[{{ error }}]</span>
@@ -15,7 +15,7 @@
         </p>
 
         <p>
-            {{ form.add_post(class="rfusername",
+            {{ form.change_post(class="rfusername",
             placeholder=form.change_post.label.text,size=32) }}<br>
             {% for error in form.change_post.errors %}
                 <span style="color: red;">[{{ error }}]</span>
