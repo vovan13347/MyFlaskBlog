@@ -164,8 +164,7 @@ def change_user_post(post_id):
     form = ChangePostForm()
     if form.validate_on_submit():
         current_post = Post.query.get(post_id)
-        current_post.title = form.change_title.data
-        current_post.text = form.change_post.data
+        current_post.title, current_post.text = form.change_title.data, form.change_post.data
         db.session.commit()
         return redirect(url_for('user', username=current_user.username))
     
