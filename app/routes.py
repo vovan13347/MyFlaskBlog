@@ -7,7 +7,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 import sqlalchemy as sa
 from app import db
 import datetime as dt
-from app.forms import RegistrationForm, UpdateAvatarForm, UpdatePostForm, ChangePostForm
+from app.forms import RegistrationForm, UpdateAvatarForm, UpdatePostForm, EditPostForm
 from urllib.parse import urlsplit
 
 import logging
@@ -158,14 +158,22 @@ def delete_post(post_id):
     flash('Пост удалён', 'success')
     return redirect(url_for('user', username=current_user.username))
 
-@app.route('/change_user_post/<int:post_id>', methods=['POST'])
+@app.route('/edit_user_post/<int:post_id>', methods=['POST'])
 @login_required
-def change_user_post(post_id):
-    form = ChangePostForm()
-    if form.validate_on_submit():
-        current_post = Post.query.get(post_id)
-        current_post.title, current_post.text = form.change_title.data, form.change_post.data
+def edit_user_post(post_id):
+    current_post = Post.query.get_or_404(post_id)
+    if current_post.user_id != current_user.id:
+        flash('У вас нет прав на изменение этого поста')
+        return redirect(url_for('user', username=current_user.username))
+    form = EditPostForm()
+    if form.validate_on_submit():    
+        current_post.title = form.edit_title.data
+        current_post.text = form.edit_post.data
         db.session.commit()
+        flash('Пост изменён', 'success')
         return redirect(url_for('user', username=current_user.username))
     
-    return render_template('change_user_post.html', form=form)
+    form.edit_title.data = current_post.title
+    form.edit_post.data = current_post.text
+    
+    return render_template('edit_user_post.html', form=form)

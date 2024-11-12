@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div class="registrationform">
+            <h1>Обновление поста</h1>
+
+        <p>
+            {{ form.edit_title(class="rfusername",
+            placeholder=form.edit_title.label.text,size=32) }}<br>
+        </p>
+
+        <p>
+            {{ form.edit_post(class="rfusername",
+            placeholder=form.edit_post.label.text,size=32) }}<br>
+        </p>
+
+        <p>{{ form.submit(class="rfsubmit") }}</p>
+        </div>
+    </form>
+{% endblock %}

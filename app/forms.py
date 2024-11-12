@@ -71,7 +71,7 @@ class UpdatePostForm(FlaskForm):
     add_post = TextAreaField("Введите текст поста", validators=[DataRequired()])
     submit = SubmitField('Добавить пост')
 
-class ChangePostForm(FlaskForm):
-    change_title = StringField('Название поста', validators=[DataRequired()])
-    change_post = TextAreaField("Введите текст поста", validators=[DataRequired()])
+class EditPostForm(FlaskForm):
+    edit_title = StringField('Название поста', validators=[DataRequired()])
+    edit_post = TextAreaField("Введите текст поста", validators=[DataRequired()])
     submit = SubmitField('Изменить пост')
