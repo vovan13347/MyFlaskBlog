@@ -34,7 +34,7 @@
         </form>
 
         <form action="{{ url_for('delete_post', post_id=post.id) }}" method="post">
-            <button class="deletepostuser" type="submit">Удалить пост</button>
+            <button class="deletepostuser" onclick="return confirmClick()" type="submit">Удалить пост</button>
         </form>
         
     </article>
