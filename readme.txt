@@ -83,5 +83,6 @@ export FLASK_RUN_HOST=0.0.0.0
 
 git pull origin master
 
+source name/bin/activate
 
-coomit
+python -m pip install -r requirements.txt
