@@ -166,7 +166,7 @@ def edit_user_post(post_id):
         flash('У вас нет прав на изменение этого поста')
         return redirect(url_for('user', username=current_user.username))
     form = EditPostForm()
-    if form.validate_on_submit():    
+    if form.validate_on_submit():
         current_post.title = form.edit_title.data
         current_post.text = form.edit_post.data
         db.session.commit()

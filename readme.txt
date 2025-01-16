@@ -86,3 +86,28 @@ git pull origin master
 source name/bin/activate
 
 python -m pip install -r requirements.txt
+
+!--
+user.html
+    <form action="/add_post">
+        <button class="addpost" type="submit">Добавить пост</button>
+    </form>
+   
+    {% for post in posts %}
+    <article class="post">
+        <h2>{{ post.title }} </h2>
+        <p>{{ post.text }}</p>
+        <p class="post-meta">{{ post.date }}</p>
+
+        <form action="{{ url_for('edit_user_post', post_id=post.id) }}" method="post">
+            <button type="submit">Редактировать пост</button>
+        </form>
+
+        <form action="{{ url_for('delete_post', post_id=post.id) }}" method="post">
+            <button class="deletepostuser" onclick="return confirmClick()" type="submit">Удалить пост</button>
+        </form>
+        
+    </article>
+    {% endfor %}
+{% endblock %}
+-->
