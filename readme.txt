@@ -87,7 +87,7 @@ source name/bin/activate
 
 python -m pip install -r requirements.txt
 
-!--
+
 user.html
     <form action="/add_post">
         <button class="addpost" type="submit">Добавить пост</button>
@@ -110,4 +110,22 @@ user.html
     </article>
     {% endfor %}
 {% endblock %}
--->
+
+
+
+index.html
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>Привет, {{ current_user.username }}!</h1>
+    <section class="posts">
+        <img  src="{{ url_for('static', filename='images/i3.png') }}"> 
+        
+        {% for post in posts %}
+            <article class="post">
+                <h2>{{ post.title }} </h2>
+                <p>{{ post.text }} </p>
+                <p class="post-meta">{{ post.date }}</p>
+            </article>
+        {% endfor %}
+{% endblock %}
